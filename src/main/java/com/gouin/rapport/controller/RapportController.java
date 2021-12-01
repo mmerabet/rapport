@@ -20,10 +20,12 @@ import org.springframework.web.bind.annotation.*;
         version = "1.0",
         description = "Availables methods for rapport Diabete"
 ))
-@CrossOrigin("*")
+
 public class RapportController {
 
     private final RapportService rapportService;
+
+    @CrossOrigin("*")
     @PostMapping()
     public ResponseEntity<Rapport> generatePatientReport(@RequestBody PatientWithHistory patientWithHistory){
         log.info("Controller Post generatePatientReport");

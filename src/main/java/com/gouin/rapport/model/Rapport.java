@@ -9,7 +9,6 @@ import lombok.Data;
 public class Rapport {
     private String firstName;
     private String lastName;
-    private String birthdate;
     private String gender;
     private int age;
     private DiabetePatientRiskLevel diabetePatientRiskLevel;
